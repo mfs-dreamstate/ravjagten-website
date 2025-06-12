@@ -15,11 +15,11 @@
   }
   
   * {
-    @apply border-border;
+    @apply border-gray-200;
   }
   
   body {
-    @apply text-foreground;
+    @apply text-gray-900;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   }
 }
@@ -415,6 +415,24 @@
   .unsplash-nature {
     background-image: url('https://source.unsplash.com/random/1920x1080/?nature,landscape');
   }
+
+  /* Shadow utilities */
+  .shadow-glass {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .shadow-glass-lg {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .shadow-glow-lg {
+    box-shadow: 0 0 40px rgba(149, 225, 211, 0.3);
+  }
+
+  /* Animation utilities */
+  .animate-blob {
+    animation: float 7s ease-in-out infinite;
+  }
 }
 
 @layer utilities {
@@ -478,6 +496,43 @@
     75% {
       border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
     }
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+
+  @keyframes gradient-text {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) }
+    50% { transform: translateY(-20px) }
+  }
+
+  @keyframes float-delay {
+    0%, 100% { transform: translateY(0px) }
+    50% { transform: translateY(-30px) }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.5 }
+    50% { opacity: 1 }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px) }
+    to { opacity: 1; transform: translateY(0) }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px) }
+    to { opacity: 1; transform: translateY(0) }
   }
   
   @keyframes meshAnimation {

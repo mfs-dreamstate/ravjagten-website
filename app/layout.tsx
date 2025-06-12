@@ -3,13 +3,13 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ravjagten.vercel.app'),
-  title: 'Ravjagten',
-  description: 'Welcome to our website',
-  keywords: 'Technology, Our Services, Ravjagten',
+  title: 'Ravjagten - Familievenlig ravjagt og fossilsøgning',
+  description: 'Vi vil bringe familier tættere sammen ved at tilbyde pakkeløsninger der gør at man kan komme nemt i gang med en familie hobby. Oplev magien ved ravjagt og fossil-søgning sammen med dine børn.',
+  keywords: 'ravjagt, fossiler, familie aktiviteter, børn, natur, strand, rav, geologi, Danmark',
   authors: [{ name: 'Ravjagten' }],
   openGraph: {
-    title: 'Ravjagten',
-    description: 'Welcome to our website',
+    title: 'Ravjagten - Familievenlig ravjagt og fossilsøgning',
+    description: 'Vi vil bringe familier tættere sammen ved at tilbyde pakkeløsninger der gør at man kan komme nemt i gang med en familie hobby.',
     type: 'website',
   },
 }
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="da" className="scroll-smooth">
       <body style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
         <div className="background-orbs" aria-hidden="true">
           <div className="orb-1" />
